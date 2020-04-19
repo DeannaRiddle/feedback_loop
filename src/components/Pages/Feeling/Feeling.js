@@ -8,12 +8,13 @@ class FeelingPage extends Component {
     supported: "",
     comments: "",
   };
-  onTypeClick = (type) => (event) => {
-    this.props.dispatch({ type: "SET_FEELING_RATING", payload: type });
+  onTypeClick = (rating) => (event) => {
+    this.props.dispatch({ rating: "SET_FEELING_RATING", payload: rating });
     this.props.history.push("/feeling");
   };
 
   render() {
+    console.log(this.props.store);
     return (
       <div>
         <h1>How are you feeling?</h1>

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class SupportedPage extends Component {
-  onTypeClick = (type) => (event) => {
-    this.props.dispatch({ type: "SET_SUPPORTED_RATING", payload: type });
+  onTypeClick = (rating) => (event) => {
+    this.props.dispatch({ rating: "SET_SUPPORTED_RATING", payload: rating });
     this.props.history.push("/supported");
   };
 

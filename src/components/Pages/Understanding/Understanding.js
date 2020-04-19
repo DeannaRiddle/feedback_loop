@@ -2,8 +2,11 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class UnderstandingPage extends Component {
-  onTypeClick = (type) => (event) => {
-    this.props.dispatch({ type: "SET_UNDERSTANDING_RATING", payload: type });
+  onTypeClick = (rating) => (event) => {
+    this.props.dispatch({
+      rating: "SET_UNDERSTANDING_RATING",
+      payload: rating,
+    });
     this.props.history.push("/understanding");
   };
 

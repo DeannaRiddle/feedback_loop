@@ -37,7 +37,7 @@ const commentsReducer = (state = {}, action) => {
   return state;
 };
 
-const storeInstance = createStore(
+const summaryReducer = createStore(
   combineReducers({
     feelingReducer,
     understandingReducer,
@@ -48,7 +48,7 @@ const storeInstance = createStore(
 );
 
 ReactDOM.render(
-  <Provider store={storeInstance}>
+  <Provider store={summaryReducer}>
     <App />
   </Provider>,
   document.getElementById("root")
