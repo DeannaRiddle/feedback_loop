@@ -3,22 +3,19 @@ import { connect } from "react-redux";
 import axios from "axios";
 import { render } from "react-dom"; 
 
-class SummaryPage extends Component {
+class ReviewPage extends Component {
     submitFeedback = (event) => {
         const feedback = {
-
-
-        }
-      
-
-
-
+       feedback: this.props.store.feedbackReducer.feedback,
+       understanding: this.props.store.understandingReducer.understanding,    
+       supported: this.props.store.supportedReducer.supported,    
+       comments: this.props.store.commentsReducer.comments,         
     };
-
+      
 
 axios
  .post("/feedback", feedback )
- .then((repsonse) => {
+ .then((response) => {
      console.log(response.data);
      this.props.history.push("/");
  })
@@ -31,3 +28,9 @@ axios
 render() {
     
 }
+
+
+
+
+const mapStoreToProps = (store) => ({ store });
+export default connect(mapStoreToProps)(ReviewPage);
