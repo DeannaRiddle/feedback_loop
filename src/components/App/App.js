@@ -11,26 +11,26 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Router>
+        <Router>
+          <header className="App-header">
             <h1 className="App-title">Feedback!</h1>
             <h4>
               <i>Don't forget it!</i>
             </h4>
           </header>
-        </div>
-        <br />
-        <br />
-        <div>
-          <Route exact path="/" component={TypePage} />
-          <Route exact path="/feeling" component={FeelingPage} />
-          <Route exact path="/understanding" component={UnderstandingPage} />
-          <Route exact path="/supported" component={SupportedPage} />
-          <Route exact path="/comments" component={CommentsPage} />
-          <Route exact path="/review" component={ReviewPage} />
-        </Router>
+          <br />
+          <br />
+          <div>
+            <Route exact path="/" component={TypePage} />
+            <Route exact path="/feeling" component={FeelingPage} />
+            <Route exact path="/understanding" component={UnderstandingPage} />
+            <Route exact path="/supported" component={SupportedPage} />
+            <Route exact path="/comments" component={CommentsPage} />
+            <Route exact path="/review" component={ReviewPage} />
+          </Router>
 
-        <br />
+          <br />
+        </div>
       </div>
     );
   }
