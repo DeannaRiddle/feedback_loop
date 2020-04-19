@@ -1,4 +1,3 @@
-  
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
@@ -16,3 +15,6 @@ class TypePage extends Component {
       </div>
     );
   }
+}
+
+export default connect()(UnderstandingPage);

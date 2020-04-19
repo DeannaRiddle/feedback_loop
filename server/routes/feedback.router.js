@@ -9,23 +9,13 @@ router.post("/", (req, res) => {
   (feeling, understanding, support, comments, flagged, date)
   VALUES ($1,$2,$3,$4,$5,$6)`;
 
-  const address = req.body.customer_address
-    ? req.body.customer_address
-    : "pickup";
-
-  let feedback = "";
-
-  for (let feedback of req.body.feedback) {
-    feedback += `${feedback}`;
-  }
-
   pool
     .query(queryString, [
-      req.body.customer_first_name,
-      req.body.customer_last_name,
-      address,
-      req.body.order_type,
-      pizzas,
+      req.body.feeling,
+      req.body.understanding,
+      req.body.supported
+      req.body.comments,
+      
     ])
     .then((response) => {
       res.sendStatus(200);

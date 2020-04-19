@@ -29,7 +29,7 @@ const supportedReducer = (state = {}, action) => {
   return state;
 };
 
-const commentReducer = (state = {}, action) => {
+const commentsReducer = (state = {}, action) => {
   if (action.type === "SET_COMMENTS_INFO") {
     return { ...action.payload };
   }

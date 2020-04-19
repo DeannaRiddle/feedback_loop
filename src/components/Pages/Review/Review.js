@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import axios from "axios";
-import { render } from "react-dom";
+import { render } from "react-dom"; 
 
 class SummaryPage extends Component {
-    const feedback = {
+    submitFeedback = (event) => {
+        const feedback = {
+
+
+        }
+      
 
 
 

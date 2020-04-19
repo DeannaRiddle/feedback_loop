@@ -16,3 +16,4 @@ class TypePage extends Component {
     );
   }
 }
+export default connect()(FeelingPage);

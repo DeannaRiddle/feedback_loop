@@ -20,17 +20,13 @@ class App extends Component {
           </header>
           <br />
           <br />
-          <div>
-            <Route exact path="/" component={TypePage} />
-            <Route exact path="/feeling" component={FeelingPage} />
-            <Route exact path="/understanding" component={UnderstandingPage} />
-            <Route exact path="/supported" component={SupportedPage} />
-            <Route exact path="/comments" component={CommentsPage} />
-            <Route exact path="/review" component={ReviewPage} />
-          </Router>
-
-          <br />
-        </div>
+          <Route exact path="/" component={TypePage} />
+          <Route exact path="/feeling" component={FeelingPage} />
+          <Route exact path="/understanding" component={UnderstandingPage} />
+          <Route exact path="/supported" component={SupportedPage} />
+          <Route exact path="/comments" component={CommentsPage} />
+          <Route exact path="/review" component={ReviewPage} />
+        </Router>
       </div>
     );
   }
