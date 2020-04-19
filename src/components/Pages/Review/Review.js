@@ -26,10 +26,12 @@ axios
 };
 
 render() {
-    
+   let feedbackElement  = (
+       <div>
+           <h2>Review Your Feedback for Today:</h2>
+       </div>
+   );
 }
-
-
 
 
 const mapStoreToProps = (store) => ({ store });

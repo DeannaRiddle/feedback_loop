@@ -21,7 +21,6 @@ class App extends Component {
           </header>
           <br />
           <br />
-          <Route exact path="/" component={TypePage} />
           <Route exact path="/feeling" component={FeelingPage} />
           <Route exact path="/understanding" component={UnderstandingPage} />
           <Route exact path="/supported" component={SupportedPage} />

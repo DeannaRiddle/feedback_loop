@@ -11,6 +11,7 @@ class SupportedPage extends Component {
     return (
       <div>
         <h1>How well are you being supported?</h1>
+        <input className="rating" type="number" min="1" max="5"></input>
         <button onClick={this.onClick("Next")}>Next</button>
       </div>
     );
