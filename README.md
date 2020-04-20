@@ -1,9 +1,48 @@
-# Project Name
+# Feedback Loop
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Within this project we had to recreate our Prime Daily Feedback form. Although each question had to be on their own page with a review page. The review page had to compile all the information that was entered in the previous pages.
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+We had to re-create our Prime daily feedback forms spread over multiple pages.
+The landing page is the first question.
+You must answer and click through to the next. Until you reach the review page.
+You can not change your answers or go back. You can only submit your answers at the end.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+## Screen Shots
+
+## Prerequisites
+
+The softwares required to install the app:
+
+React
+Redux
+Node.js
+Axios
+
+## Usage
+
+1.
+
+## Built With
+
+React
+Redux
+Axios
+Nodemon
+Json
+JavaScript
+HTML
+Visual Studio Code
+Postman
+Postico
+
+## License
+
+## Acknowledgement
+
+Thank you to Prime Digital Academy who equipped and helped me to make this application a reality.
+
+## Support
+
+If you have any suggestions or complications with the application, please email me at lriddle.deanna@gmail.com.
